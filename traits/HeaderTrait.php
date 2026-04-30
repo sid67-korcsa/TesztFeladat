@@ -63,7 +63,7 @@ trait HeaderTrait
                     background: #ffffff;
                     border-radius: 8px;
                     padding: 16px;
-                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                    box-shadow: 0 8px 8px rgba(0,0,0,0.1);
                     border: 1px solid #e5e5e5;
                 }
                 .product-image {
@@ -80,7 +80,8 @@ trait HeaderTrait
                     align-content: center;
                 }
                 .product-name {
-                    font-style: oblique;
+                    font-style: normal;
+                    font-weight: bold;
                 }
                 .product-price {
                     font-style: italic;
