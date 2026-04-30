@@ -1,0 +1,22 @@
+{
+  "Product": [
+    {
+      "Kep": "includes/media/pngtree-test-orange-testing-vector-picture-image.png",
+      "Nev": "Viessmann Vitodens Classic kondenzációs gázkazán",
+      "Ar": 250000,
+      "Keszlet": 1
+    },
+    {
+      "Kep": "includes/media/pngtree-test-orange-testing-vector-picture-image.png",
+      "Nev": "Samsung split klíma",
+      "Ar": 200000,
+      "Keszlet": 0
+    },
+    {
+      "Kep": "includes/media/pngtree-test-orange-testing-vector-picture-image.png",
+      "Nev": "Hajdu kombi kondenzációs gázkazán",
+      "Ar": 510000,
+      "Keszlet": 1
+    }
+  ]
+}
