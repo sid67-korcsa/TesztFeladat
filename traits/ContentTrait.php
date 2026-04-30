@@ -38,7 +38,7 @@ trait ContentTrait {
                     $stocks = $this->analyze($prod);
                     $contentView .= '
                         <div class="product-card">
-                            <p><img class="product-image" src="' . $prod->Kep . '" /></p>
+                            <div class="product-image"><img class="product-image-img" src="' . $prod->Kep . '" /></div>
                             <p class="product-name">' . $prod->Nev . '</p>
                             <p class="product-price">' . $prod->Ar . '</p>
                             <p class="product-stock">' . $prod->Keszlet . '</p>

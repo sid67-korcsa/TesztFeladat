@@ -22,6 +22,11 @@ trait HeaderTrait
                 <script src="includes/js/test.js"></script>
                 <!-- STYLES -->
             <style>
+            
+                @keyframes divAnimation {
+                    from {background-color: #f0bb46;}
+                    to {background-color: #faf4e8;}
+                }
                 html, body {
                     color: rgba(33, 37, 41, 1);
                     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
@@ -62,6 +67,13 @@ trait HeaderTrait
                     border: 1px solid #e5e5e5;
                 }
                 .product-image {
+                    margin: auto;
+                    display: table;
+                    align-content: center;
+                    animation-name: divAnimation;
+                    animation-duration: 4s;
+                }
+                .product-image-img {
                     width: 100px;
                     height: 100px;
                     padding: 1px;
