@@ -15,7 +15,7 @@ trait ProjectModelTrait {
     /**
      * @return array
      */
-    protected function export()
+    protected function export(): string|array|object
     {
 
         header('Content-Type: application/json');

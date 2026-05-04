@@ -14,7 +14,7 @@ trait JsonTrait {
     /**
      * @return array
      */
-    public function getJSON(): stdClass
+    public function getJSON(): stdClass|array
     {
         if(is_file($this->jsonFile) && is_readable($this->jsonFile)) {
             $this->jsonReturn = file_get_contents($this->jsonFile);
