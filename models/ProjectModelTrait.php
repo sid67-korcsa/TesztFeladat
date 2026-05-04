@@ -9,11 +9,16 @@ trait ProjectModelTrait {
 
     use JsonTrait;
 
+    protected $returnData = [];
+    protected $outXmlFile = "includes/media/products.xml";
+
     /**
      * @return array
      */
-    protected function export(): string
+    protected function export()
     {
+
+        header('Content-Type: application/json');
 
         $products = $this->getJSON();
 
@@ -21,9 +26,16 @@ trait ProjectModelTrait {
             $xmlContent = $this->xmlConvert($products->Product);
         }
 
-        file_put_contents("includes/media/products.xml", $xmlContent);
+        file_put_contents($this->outXmlFile, $xmlContent);
 
-        return "includes/media/products.xml";
+        $this->returnData = [
+            "success" => true,
+            "data" => $this->outXmlFile,
+            "messages" => "Success"
+        ];
+
+
+        echo json_encode($this->outXmlFile);
     }
 
     /**

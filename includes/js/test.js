@@ -17,10 +17,11 @@ $(document).ready(function ($) {
         })
             .done(function (response) {
                 if(typeof response !== "undefined" || typeof response !== undefined) {
-                    window.location.href = "includes/media/products.xml";
+                    window.location.href = response;
                 }
             })
             .fail(function (response) {
+                console.log("response-Error");
                 console.log(response);
                 window.alert("Sikertelen exportálás!");
             });
