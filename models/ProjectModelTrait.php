@@ -34,8 +34,9 @@ trait ProjectModelTrait {
             "messages" => "Success"
         ];
 
-
         echo json_encode($this->outXmlFile);
+
+        return $this->returnData;
     }
 
     /**
